@@ -1,0 +1,80 @@
+.mobile_nav{
+    display: none;
+}
+
+@media (max-width:400px) {
+    .mobile_nav{
+        display: block;
+        background-color: white;
+    }
+
+    .mob-header{
+        position: fixed;
+        right: 15px;
+        bottom: 20px;
+        z-index: 11;
+        display: none;
+    }
+
+    .toggle-menu{
+        width: 50px;
+        height:50px;
+        position: relative;
+        border-radius: 50%;
+        padding: 0;
+        background: #000;
+        border: none;
+        cursor: pointer;
+    }
+
+    .toggle-menu >inner-menu > span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 25px;
+        height: 2px;
+        margin: auto;
+        background: #fff;
+        color: #fff;
+    }
+
+    .toggle-menu span:first-child {
+        top: -17px;
+    }
+
+    .toggle-menu span:nth-child(2) {
+        top: -1px;
+    }
+
+    .toggle-menu span:nth-child(3) {
+        top: auto;
+        bottom: 16px;
+    }
+    .leftside_bar{
+        display: none;
+    }
+
+    .leftside_bar{
+        width: 70%;
+    }
+    .image{
+        height: 50px;
+        width: 50px;
+    }
+
+   #menu-btn{
+       color: #fff;
+       margin-left: 7px;
+       height: 50px;
+       width: 35px;
+   }
+
+   #close-btn{
+    color: #fff;
+    margin-left: 5px;
+    height: 50px;
+    width: 40px;
+   }
+}

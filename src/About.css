@@ -1,0 +1,112 @@
+.about{
+    width: 78%;
+    height: auto;
+    clear: both;
+    float: left;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: white;
+    margin-left: 335px;
+}
+.personal_title{
+   width: 100%;
+   float: left;
+}
+
+.personal_title > h3{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.about_content{
+    width: 100%;
+    height: auto;
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+.about_left > h4{
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+.about_left > h4 > span{
+    font-weight: 600;
+}
+
+.about_left > p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #7e7e7e;
+    margin-left: 50px;
+}
+
+.about_button{
+  margin: 30px 60px;
+}
+
+.about_btn{
+    /* margin: 30px 60px; */
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: white;
+    color:#7e7e7e ;
+    font-size: 17px;
+    border-color: black;
+    transition: .5s;
+    cursor: pointer;
+    /* font-weight: 500; */
+}
+
+.about_btn:hover{
+  background-color: black;
+  color: white;
+}
+
+.about_right{
+    background-image: url(./pratik.png);
+    height: 470px;
+    width: 350px;
+    margin-right: 100px;
+    background-size:cover;
+    background-position-y: -70px;
+    border-radius: 10%;
+}
+
+@media only screen and (max-width:400px) {
+    .about{
+        width: 100%;
+        margin-left: 0;
+        padding-top: 30px;
+    }
+
+    .personal_title > h3{
+       font-size: 35px;
+       margin-bottom: 0;
+       /* margin-left: 50px; */
+    }
+
+     .about_content{
+        flex-direction: column;
+        padding-top: 25px;
+    }
+    .about_right{
+        height: 300px;
+        width: 250px;
+        margin-top: 30px;
+        margin-left: 75px;
+        background-position-y:-50px ;
+        background-size: cover;
+    }
+
+    .about_btn{
+        /* padding: 8px;px 25px; */
+        font-size: 16px;
+    }
+}
