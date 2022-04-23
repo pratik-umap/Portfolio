@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.c26d6a96.css",
-    "main.js": "/Portfolio/static/js/main.2b18b8f8.js",
+    "main.js": "/Portfolio/static/js/main.ccfa4424.js",
     "static/media/pratik.png": "/Portfolio/static/media/pratik.9d99151d80c0f920c9e3.png",
     "static/media/logo1.jpg": "/Portfolio/static/media/logo1.6097336f373772d6a371.jpg",
     "index.html": "/Portfolio/index.html",
     "main.c26d6a96.css.map": "/Portfolio/static/css/main.c26d6a96.css.map",
-    "main.2b18b8f8.js.map": "/Portfolio/static/js/main.2b18b8f8.js.map"
+    "main.ccfa4424.js.map": "/Portfolio/static/js/main.ccfa4424.js.map"
   },
   "entrypoints": [
     "static/css/main.c26d6a96.css",
-    "static/js/main.2b18b8f8.js"
+    "static/js/main.ccfa4424.js"
   ]
 }
