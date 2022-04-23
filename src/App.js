@@ -10,7 +10,7 @@ import Personal from './PersonalInfo';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Portfolio">
     <div className="app">
       <Switch>
       
