@@ -1,6 +1,6 @@
 .skill{
     width: 75%;
-    height: 100vh;
+    height: auto;
     clear: both;
     float: left;
     /* padding-bottom: 100px; */
@@ -33,7 +33,7 @@
     display: flex;
     padding-top: 40px;
     flex-wrap: wrap;
-    margin: 0 -20px 10px 40px;
+    padding-left: 40px;
     height: auto;
     clear: both;
     float: left;
@@ -88,14 +88,17 @@
 
     .skill_content > p{
         font-size: 20px;
-        margin-left: 40px;
+        margin: 25px;
     }
 
     .progress_bar{
-        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+        padding-left: 0;
     }
 
     .progress_inner{
-        width: 48%;
+        width: 90%;
     }
 }

@@ -8,17 +8,29 @@
         background-color: white;
     }
 
+     .header{
+         position: fixed;
+         width: 100%;
+         background-color: #fff;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 20px 0;
+         box-shadow: 0 8px 24px rgb(149 157 165 / 20%);
+     }
+    .header > h3{
+        font-size: 32px;
+        margin-left: 40px;
+    }
     .mob-header{
-        position: fixed;
-        right: 15px;
-        bottom: 20px;
-        z-index: 11;
+        /* position: fixed; */
+        margin-right: 15px;
         display: none;
     }
 
     .toggle-menu{
-        width: 50px;
-        height:50px;
+        width: 45px;
+        height:45px;
         position: relative;
         border-radius: 50%;
         padding: 0;
@@ -27,38 +39,12 @@
         cursor: pointer;
     }
 
-    .toggle-menu >inner-menu > span{
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 25px;
-        height: 2px;
-        margin: auto;
-        background: #fff;
-        color: #fff;
-    }
-
-    .toggle-menu span:first-child {
-        top: -17px;
-    }
-
-    .toggle-menu span:nth-child(2) {
-        top: -1px;
-    }
-
-    .toggle-menu span:nth-child(3) {
-        top: auto;
-        bottom: 16px;
-    }
     .leftside_bar{
         display: none;
+        width: 70%;
+        height: 100vh;
     }
 
-    .leftside_bar{
-        width: 70%;
-    }
     .image{
         height: 50px;
         width: 50px;
@@ -66,15 +52,18 @@
 
    #menu-btn{
        color: #fff;
-       margin-left: 7px;
-       height: 50px;
+       margin-left: 5px;
+       height: 45px;
        width: 35px;
    }
 
    #close-btn{
     color: #fff;
-    margin-left: 5px;
-    height: 50px;
+    margin-left: 2px;
+    height: 45px;
     width: 40px;
+   }
+   .info{
+       margin-top: 0;
    }
 }

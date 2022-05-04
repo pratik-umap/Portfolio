@@ -94,14 +94,15 @@
     background-size: contain;
 }
 
+.info{
+    margin-top: 5px;
+}
 .info > h3{
     margin-left: 15px;
-
 }
 
 .info > h4{
     margin-left: 15px;
-    margin-top: 5px;
     font-weight: 400;
 }
 

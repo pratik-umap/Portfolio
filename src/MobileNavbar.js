@@ -20,12 +20,16 @@ function MobileNavbar() {
 
   return (
     <div className='mobile_nav'>
+      <div className='header'>
+          <h3>PrAt!K</h3>
 
-       <div className='mob-header'>
-         <div className='toggle-menu' onClick={myFunction}>
-           {open ? <CloseRoundedIcon id='close-btn' /> : <MenuRoundedIcon id='menu-btn' />} 
-         </div>
+         <div className='mob-header'>
+          <div className='toggle-menu' onClick={myFunction}>
+            {open ? <CloseRoundedIcon id='close-btn' /> : <MenuRoundedIcon id='menu-btn' />} 
+          </div>
        </div>
+ 
+      </div>
 
          <div className='leftside_bar' id='leftside_bar'>
           <h2>PrAt!K</h2>
