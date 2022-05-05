@@ -3,7 +3,6 @@
     height: auto;
     clear: both;
     float: left;
-    /* padding-bottom: 100px; */
     padding-top: 100px;
     margin-left: 335px;
 }
@@ -56,7 +55,6 @@
 .background{
     width: 100%;
     min-width: 100%;
-    /* position: relative; */
     height: 16px;
     border: 1px solid #7e7e7e;
     padding: 2px;
@@ -83,7 +81,6 @@
     .skill_content > h3{
         font-size: 35px;
         margin-bottom: 30px;
-        /* margin-left: 80px; */
     }
 
     .skill_content > p{

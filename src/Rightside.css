@@ -1,7 +1,6 @@
 .rightside{
     width: 77%;
     margin-left: 350px;
-    /* background-color: violet; */
     height: 100vh;
     clear: both;
     float: left;
@@ -59,7 +58,6 @@
    width: 42px;
    padding: 10px;
    border-right: 1px solid rgb(162, 160, 160);
-   /* margin: 10px; */
 }
 .social_img:hover{
     transform: translateY(-3px);
@@ -127,9 +125,6 @@
         right: 15px;
     }
     .btn{
-    
         padding: 8px 20px 7px;
-       
-    
     }
 }

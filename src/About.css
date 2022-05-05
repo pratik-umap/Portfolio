@@ -52,7 +52,6 @@
 }
 
 .about_btn{
-    /* margin: 30px 60px; */
     padding: 10px 25px;
     border-radius: 10px;
     background-color: white;
@@ -61,7 +60,6 @@
     border-color: black;
     transition: .5s;
     cursor: pointer;
-    /* font-weight: 500; */
 }
 
 .about_btn:hover{
@@ -89,7 +87,6 @@
     .personal_title > h3{
        font-size: 35px;
        margin-bottom: 0;
-       /* margin-left: 50px; */
     }
 
      .about_content{
@@ -106,7 +103,6 @@
     }
 
     .about_btn{
-        /* padding: 8px;px 25px; */
         font-size: 16px;
     }
   
