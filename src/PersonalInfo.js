@@ -10,14 +10,14 @@ function Personal() {
             <div className='personal_content'>
                 <ul className='content_list_1'>
                    <li>First Name: <span>Pratik</span></li>
-                   <li>Age: <span>21 Years</span></li>
-                   <li>Phone: <span>+123456789</span></li>
-                   <li>Language: <span>English</span></li>
+                   <li>Age: <span>22 years</span></li>
+                   <li>Phone: <span>8983140449</span></li>
+                   <li>Language: <span>English, Hindi, Marathi</span></li>
                 </ul>
                 <ul className='content_list_2'>
                     <li>Last Name: <span>Umap</span></li>
                     <li>Nationality: <span>Indian</span></li>
-                    <li>Email: <span>you@gmail.com</span></li>
+                    <li>Email: <span>pratikumap137@gmail.com</span></li>
                 </ul>
             </div>
             <div className='education_info'>

@@ -29,11 +29,12 @@ function Rightside() {
                </li>
              </ul>
            </div>
-           <Link to="/About">
-           <a href='#'> <button className='btn'>Download CV</button>
+  
+           <a href={require("../src/PDF/PratikUmap-Resume.pdf")} download='PratikUmap-Resume.pdf'> <button className='btn'>Download CV</button>
            </a>
-           </Link>
+           
         </div>
+
         
 
     </div>

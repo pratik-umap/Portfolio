@@ -6,7 +6,7 @@ import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 
 function MobileNavbar() {
       const[open,setOpen]=useState(false);
-
+     
    const myFunction = () =>{
      setOpen(prev => !prev);
     var x= document.getElementById('leftside_bar');
@@ -15,9 +15,7 @@ function MobileNavbar() {
       }else{
         x.style.display='block';
       }
-
    }
-
   return (
     <div className='mobile_nav'>
       <div className='header'>
@@ -36,19 +34,20 @@ function MobileNavbar() {
           
           <div className='sidebar_menu'>
               <ul className='sidebar_list'>
-                 <Link to='/'  style={{textDecoration:'none'}} >
+                 <Link to='/'  style={{textDecoration:'none'}}>
                   <li className='inner-list'>
                   <img  src="http://edinareact.ibthemespro.com/img/svg/home.svg" alt="icon" />
                     <h3>Home</h3>
                   </li>
                   </Link>
-                   
+
                    <Link to="/About" style={{textDecoration:'none'}} >
                   <li className='inner-list'>
                   <img  src="http://edinareact.ibthemespro.com/img/svg/human.svg" alt="icon" />
                   < h3>About</h3>
                   </li>
                   </Link>
+                  
                   <Link to="/Skill" style={{textDecoration:'none'}} >
                   <li className='inner-list'>
                   <img src="http://edinareact.ibthemespro.com/img/svg/service.svg" alt="icon" />

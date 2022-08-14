@@ -23,6 +23,9 @@ function Skill() {
     },
     {
       width:"90%"
+    },
+    {
+      width:"70%"
     }
  ]
   return (
@@ -114,7 +117,16 @@ function Skill() {
             </div>
           </div>
 
+          <div className='progress_inner'>
+            <span className='label'>Node JS</span>
+            <div className='background'>
+              <div className='bar'>
+                 <div className='bar_inner' style={arr[7]}>
 
+                 </div>
+              </div>
+            </div>
+          </div>
 
         </div>
 

@@ -1,11 +1,22 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import './Contact.css'
+import emailjs from '@emailjs/browser'
+
 function Contact() {
+  const form = useRef();
 
-  function clickSubmit(e) {
-      e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  }
+    emailjs.sendForm('service_7ngb9ky', 'template_6uyinee', form.current, 'lc9aMTuyxUBJTA4h9')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset()
+  };
   return (
     <div className='contact'>
        <div className='contact_title'>
@@ -57,14 +68,14 @@ function Contact() {
                 </p>
                 </div>
                 <div className="fields">
-                  <form  className="contact_form">
+                  <form  className="contact_form" ref={ form } onSubmit={sendEmail}>
                     
                     <div className="first_row">
                        <input name="name" type="text" placeholder="Name *" required />
                      </div>
 
                      <div className="second_row">
-                         <input name="email" type="email" placeholder="Email *" required/>
+                         <input name="user_email" type="email" placeholder="Email *" required/>
                       </div>
 
                     <div className="third_row">
@@ -72,7 +83,7 @@ function Contact() {
                     </div>
 
                     <div className="contact_btn">
-                       <button onSubmit={ clickSubmit } className="color">Submit</button>
+                       <button type='submit' className="color">Submit</button>
                     </div>
                  </form>
                 </div>

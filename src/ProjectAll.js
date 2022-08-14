@@ -8,7 +8,7 @@ function ProjectAll() {
         {
             name:'Amazon Clone',
             image:'https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-amazon-512.png',
-            lang:'HTML, CSS, Java Script, React JS',
+            lang:'React JS , Firebase',
             websrc:'https://clone-22ee4.web.app'
         },
         {
@@ -18,10 +18,10 @@ function ProjectAll() {
             websrc:'https://pratik-umap.github.io/Musify/'
         },
         {
-            name:'Restaurant Web',
-            image:'https://photo.designxel.com/static/vector/2015/3/27/facegfx-vector-creative-restaurant-logo-design-vector.jpg',
-            lang:'HTML, CSS, Bootstrap',
-            websrc:'file:///C:/Users/Pratik/.vscode/restaurant.html?'
+            name:'Weather Web',
+            image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ58HIQc11qbTAqBshsEJQd7SZAj5jhjD_LLA&usqp=CAU',
+            lang:'React JS,weather API',
+            websrc:'https://pratik-umap.github.io/WeatherApp/'
         },
         {
             name:'Travel Web',

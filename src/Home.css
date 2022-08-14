@@ -12,11 +12,11 @@
 .leftside_bar > h2{
     width: 100%;
     height: auto;
-    clear: both;
-    float: left;
+    /* clear: both; */
+    /* float: left; */
     border-bottom: 1px solid #cbd3d9;
     font-size: 35px;
-   padding: 35px;
+    padding: 35px 50px;
 }
 
 *{
@@ -87,7 +87,7 @@
 .image{
     height: 70px;
     width: 70px;
-    background-image: url('./logo1.jpg');
+    background-image: url(./Photo/logo1.jpg);
     border-radius: 50%;
     background-position:center;
     background-size: contain;
