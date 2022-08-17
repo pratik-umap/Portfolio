@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.4906d93c.css",
-    "main.js": "/Portfolio/static/js/main.d32c56aa.js",
+    "main.css": "/Portfolio/static/css/main.497cdbca.css",
+    "main.js": "/Portfolio/static/js/main.5b2127b0.js",
     "static/media/pratik.png": "/Portfolio/static/media/pratik.9d99151d80c0f920c9e3.png",
     "static/media/logo1.jpg": "/Portfolio/static/media/logo1.6097336f373772d6a371.jpg",
+    "static/media/PratikUmap-Resume.pdf": "/Portfolio/static/media/PratikUmap-Resume.faee06e4a0df5297fac3.pdf",
     "index.html": "/Portfolio/index.html",
-    "main.4906d93c.css.map": "/Portfolio/static/css/main.4906d93c.css.map",
-    "main.d32c56aa.js.map": "/Portfolio/static/js/main.d32c56aa.js.map"
+    "main.497cdbca.css.map": "/Portfolio/static/css/main.497cdbca.css.map",
+    "main.5b2127b0.js.map": "/Portfolio/static/js/main.5b2127b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.4906d93c.css",
-    "static/js/main.d32c56aa.js"
+    "static/css/main.497cdbca.css",
+    "static/js/main.5b2127b0.js"
   ]
 }
