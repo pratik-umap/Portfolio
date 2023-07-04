@@ -1,55 +1,42 @@
-
-import Home from './Home'
-import { BrowserRouter as Router,Switch,Route} from "react-router-dom";
-import About from './About';
-import Rightside from './Rightside';
-import Skill from './Skill';
-import ProjectAll from './ProjectAll';
-import Contact from './Contact';
-import Personal from './PersonalInfo';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Skill from "./Components/Skill";
+import ProjectAll from "./Components/ProjectAll";
+import Contact from "./Components/Contact";
+import Personal from "./Components/PersonalInfo";
+import Header from "./Components/Header";
 
 function App() {
   return (
-    <Router basename='/Portfolio'>
-    <div className="app">
-      <Switch>
-      
-      <Route path="/personal">
-        <Home />
-        <Personal />
-        
-      </Route>
-      <Route path="/contact">
-         <Home />
-         <Contact />
-      </Route>
+    <Router basename="/Portfolio">
+      <div className="app">
+        <Header />
+        <Switch>
+          <Route path="/personal">
+            <Personal />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
 
-      <Route path="/project">
-         <Home />
-         <ProjectAll />
-      </Route>
+          <Route path="/project">
+            <ProjectAll />
+          </Route>
 
-      <Route path="/skill">
-         <Home />
-         <Skill />
-      </Route>
+          <Route path="/skill">
+            <Skill />
+          </Route>
 
-      <Route path="/about">
-         <Home />
-         <About />
-      </Route>
+          <Route path="/about">
+            <About />
+          </Route>
 
-     <Route path="/">
-       <Home />
-       <Rightside />
-       <About />
-       <Skill />
-       <ProjectAll />
-       <Contact />
-     </Route>
-    
-      </Switch>
-    </div>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 }
