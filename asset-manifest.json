@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.497cdbca.css",
-    "main.js": "/Portfolio/static/js/main.5b2127b0.js",
-    "static/media/pratik.png": "/Portfolio/static/media/pratik.9d99151d80c0f920c9e3.png",
+    "main.css": "/Portfolio/static/css/main.8f1ae9a5.css",
+    "main.js": "/Portfolio/static/js/main.84bc3e93.js",
     "static/media/logo1.jpg": "/Portfolio/static/media/logo1.6097336f373772d6a371.jpg",
-    "static/media/PratikUmap-Resume.pdf": "/Portfolio/static/media/PratikUmap-Resume.faee06e4a0df5297fac3.pdf",
+    "static/media/Pratik-resume.pdf": "/Portfolio/static/media/Pratik-resume.2c3fa7f5eb06b8bebc66.pdf",
     "index.html": "/Portfolio/index.html",
-    "main.497cdbca.css.map": "/Portfolio/static/css/main.497cdbca.css.map",
-    "main.5b2127b0.js.map": "/Portfolio/static/js/main.5b2127b0.js.map"
+    "main.8f1ae9a5.css.map": "/Portfolio/static/css/main.8f1ae9a5.css.map",
+    "main.84bc3e93.js.map": "/Portfolio/static/js/main.84bc3e93.js.map"
   },
   "entrypoints": [
-    "static/css/main.497cdbca.css",
-    "static/js/main.5b2127b0.js"
+    "static/css/main.8f1ae9a5.css",
+    "static/js/main.84bc3e93.js"
   ]
 }
