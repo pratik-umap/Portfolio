@@ -9,7 +9,7 @@ import Header from "./Components/Header";
 
 function App() {
   return (
-    <Router basename="/Portfolio">
+    <Router >
       <div className="app">
         <Header />
         <Switch>

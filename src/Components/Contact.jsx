@@ -30,7 +30,7 @@ function Contact() {
     <div className="contact">
       <div className="contact-section">
         <div className="contact_title">
-          <h3>get in touch</h3>
+          <h3>Get in touch</h3>
           <p>
             We are happy to answer any questions you have or provide you with an
             estimate. Just send us message in the form with any question you may

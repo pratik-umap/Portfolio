@@ -1,31 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 import "../style/Header.css";
 import { Link } from "react-router-dom/cjs/react-router-dom";
-import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import { motion } from "framer-motion";
 
 function Header() {
-  const [open, setOpen] = useState(false);
-  function handleToggle() {
-    setOpen((open) => !open);
-    const navMenu = document.getElementById("leftside_bar");
-
-    if (navMenu.style.display === "block") {
-      navMenu.style.display = "none";
-    } else {
-      navMenu.style.display = "block";
-    }
+  const animationbar={
+    initial:{opacity:0,y:-50},
+    whileInView:{opacity:1,y:0},
+    transition:{duration:1.5,delay:.5}
   }
-
   return (
     <div className="header">
-      <div className="header_logo">
+      <motion.div 
+      initial={animationbar.initial}
+      whileInView={animationbar.whileInView}
+      transition={{duration:1}}
+      viewport={{ once: true }}
+      className="header_logo">
         <Link to="/" style={{ textDecoration: "none" }}>
           <h2 className="logo">Prat!k</h2>
         </Link>
-      </div>
+      </motion.div>
 
-      <ul className="header_list" id="leftside_bar">
+      <motion.ul 
+      initial={animationbar.initial}
+      whileInView={animationbar.whileInView}
+      transition={animationbar.transition}
+      viewport={{ once: true }}
+      className="header_list" id="leftside_bar">
         <Link to="/about" style={{ textDecoration: "none" }}>
           <li className="list_items">About</li>
         </Link>
@@ -38,7 +40,7 @@ function Header() {
         <Link to="/contact" style={{ textDecoration: "none" }}>
           <li className="list_items items_hide">Contact</li>
         </Link>
-      </ul>
+      </motion.ul>
     </div>
   );
 }

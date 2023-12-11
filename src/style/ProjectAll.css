@@ -1,26 +1,24 @@
 body {
-  background-color: #fbab7e;
-  background-image: linear-gradient(62deg, #e1c2e1 50%, #e1c2e1 100%);
+  background-color: #0f0e0e;
 }
 .projectall {
   width: 100%;
   height: 100vh;
-  background-color: #fbab7e;
-  background-image: linear-gradient(62deg, #e1c2e1 50%, #e1c2e1 100%);
+  background-color: #0f0e0e;
+  color: white;
 }
 .project_name {
   width: 100%;
   padding: 80px 0 40px;
-  /* background-color: rebeccapurple; */
 }
 
 .project_name > h3 {
   font-size: 45px;
   text-align: center;
+  font-family: math;
 }
 .project_section {
   width: 100%;
-  /* background-color: yellow; */
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -38,7 +36,12 @@ body {
     padding-bottom: 50px;
   }
 
+  .project_name {
+    width: 100%;
+    padding: 50px 0 20px;
+  }
+  
   .project_name > h3 {
-    font-size: 35px;
+    font-size: 28px;
   }
 }

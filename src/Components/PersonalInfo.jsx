@@ -2,13 +2,24 @@ import "../style/PersonalInfo.css";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { Link } from "react-router-dom";
+import {motion} from "framer-motion"
 
 function Personal() {
+  const animationbar={
+    initial:{opacity:0,y:15},
+    whileInView:{opacity:1,y:0},
+    transition:{duration:1}
+  }
   return (
-    <div className="personal">
+    <div className="personal-info">
+      <div className="personal">
       <h3>Peronal Information</h3>
 
-      <div className="personal_content">
+      <motion.div 
+         initial={animationbar.initial}
+         whileInView={animationbar.whileInView}
+         transition={animationbar.transition}
+      className="personal_content">
         <ul className="content_list_1">
           <li>
             First Name: <span>Pratik</span>
@@ -28,11 +39,16 @@ function Personal() {
             Nationality: <span>Indian</span>
           </li>
         </ul>
-      </div>
+      </motion.div>
       <div className="education_info">
         <h3>Education</h3>
         <ul className="education_list">
-          <li className="education_sublist">
+
+          <motion.li 
+            initial={animationbar.initial}
+            whileInView={animationbar.whileInView}
+            transition={animationbar.transition}
+          className="education_sublist">
             <div className="education_icon">
               <img
                 src="http://edinareact.ibthemespro.com/img/about/book.png"
@@ -44,12 +60,16 @@ function Personal() {
               <h5>ISB&M School of Technology, Pune, India</h5>
               <div className="education_date">
                 <CalendarTodayIcon id="cal_logo" />
-                <h5>Aug 2019 - Jun 2023 (Expected)</h5>
+                <h5>Aug 2019 - Jun 2023</h5>
               </div>
             </div>
-          </li>
+          </motion.li>
 
-          <li className="education_sublist">
+          <motion.li 
+             initial={animationbar.initial}
+             whileInView={animationbar.whileInView}
+             transition={animationbar.transition}
+          className="education_sublist">
             <div className="education_icon">
               <img
                 src="http://edinareact.ibthemespro.com/img/about/book.png"
@@ -64,7 +84,8 @@ function Personal() {
                 <h5>Aug 2017 - Jun 2019 </h5>
               </div>
             </div>
-          </li>
+          </motion.li>
+
         </ul>
       </div>
       <div className="back_button">
@@ -74,6 +95,7 @@ function Personal() {
           </div>
         </Link>
       </div>
+    </div>
     </div>
   );
 }

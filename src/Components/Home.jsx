@@ -1,17 +1,49 @@
-import React from "react";
+import React,{ useState } from "react";
 import "../style/Home.css";
 import Typewriter from "typewriter-effect";
+import {motion} from "framer-motion"
+import { useEffect } from "react";
 
 function Home() {
+
+  const [windowLength, setWindowLength] = useState(window.innerWidth);
+
+ useEffect(() => {
+ const windowHandler = () => {
+    setWindowLength(window.innerWidth);
+    console.log(windowLength);
+  }
+  window.addEventListener("resize",windowHandler );
+
+   return () => {
+     window.removeEventListener("resize",windowHandler)
+   }
+ }, [windowLength])
+ 
   return (
     <div className="home">
       <div className="home-content">
-        <div className="home-image">
+        <motion.div 
+           initial={{ opacity: 0 }}
+           whileInView={{ opacity: 1}}
+           transition={{ duration: 1 }}
+        className="home-image">
           <div className="main_image"></div>
-          <div className="image_1"></div>
-        </div>
+        </motion.div>
 
-        <div className="main_info">
+        <motion.div
+         {...(windowLength > 480
+          ? {
+              initial: { opacity: 0, x: 150 },
+              whileInView: { opacity: 1, x: 0 },
+              transition: { duration: 1 },
+            }
+          : {
+              initial: { opacity: 0, y: 48 },
+              whileInView: { opacity: 1, y: 0 },
+              transition: { duration: 1 },
+            })}
+          className="main_info">
           <h2>Hi,👋 I'm Pratik Umap</h2>
 
           <h2 id="typewriterpara">
@@ -39,40 +71,44 @@ function Home() {
               <li>
                 <a
                   href="https://www.facebook.com/profile.php?id=100080216476957"
-                  target="_blank"
+                  target="blank"
                 >
                   <img
                     className="social_img"
                     src="https://cdn-icons-png.flaticon.com/128/1077/1077041.png"
-                  ></img>
+                    alt="image1"
+                  />
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/pratik_13_/" target="_blank">
+                <a href="https://www.instagram.com/pratik_13_/" target="blank">
                   <img
                     className="social_img"
                     src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png"
-                  ></img>
+                    alt="image2"
+                  />
                 </a>
               </li>
               <li>
                 <a
                   href="https://www.linkedin.com/in/pratik-umap-5a3738237/"
-                  target="_blank"
+                  target="blank"
                 >
                   <img
                     className="social_img"
                     src="https://cdn-icons-png.flaticon.com/128/1077/1077043.png"
-                  ></img>
+                    alt="image3"
+                  />
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/pratik_umap" target="_blank">
+                <a href="https://twitter.com/pratik_umap" target="blank">
                   <img
                     className="social_img"
                     id="last_img"
                     src="https://cdn-icons-png.flaticon.com/128/1077/1077032.png"
-                  ></img>
+                    alt="image4"
+                  />
                 </a>
               </li>
             </ul>
@@ -85,7 +121,7 @@ function Home() {
               <button className="btn">Download CV</button>
             </a>
           </h4>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

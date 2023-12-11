@@ -3,7 +3,8 @@
   height: 100vh;
   padding-bottom: 100px;
   padding-top: 100px;
-  background-color: white;
+  background-color: #0f0e0e;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,28 +15,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
   border-radius: 20px;
-  background-color: #be8cbe;
-  background-image: linear-gradient(
-    0deg,
-    #be8cbe 0%,
-    #e1c2e1 50%,
-    #f1e4f1 100%
-  );
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3);
 }
 .about_image {
   height: 200px;
   width: 200px;
-  background-color: rebeccapurple;
+  mask-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
   border-radius: 50%;
   background-image: url(../Photo/logo1.jpg);
   background-position: center;
   background-size: cover;
   margin: 25px 0px 15px;
 }
+
 .about_left > h4 {
   font-size: 22px;
   font-weight: 400;
@@ -50,10 +44,9 @@
 .about_left > p {
   font-size: 18px;
   font-weight: 400;
-  color: #a86fa8fc;
+  color: white;
   text-align: center;
   margin: 0px 100px;
-  /* margin-left: 50px; */
 }
 
 .about_button {
@@ -65,7 +58,7 @@
   margin: 0 10px;
   padding: 10px 25px;
   border-radius: 10px;
-  background-color: #f1e4f1;
+  background-color:#0f0e0e;
   color: #7e7e7e;
   border: 1px solid #be8cbe;
   font-size: 17px;
@@ -74,19 +67,19 @@
 }
 
 .about_btn:hover {
-  background-color: #be8cbe;
+  background-color: #1c1a1a;
   color: white;
 }
 @media only screen and (max-width: 479px) {
   .about_image {
     height: 140px;
     width: 140px;
+    margin: 0;
   }
 
   .about_content {
-    height: 81vh;
-    flex-direction: column;
-    /* padding-top: 25px; */
+    margin-top: 10px;
+    height: 78vh;
   }
 
   .about_btn {
@@ -99,7 +92,7 @@
   }
 
   .about_left > p {
-    margin: 5px 20px;
+    margin: 5px 28px;
     font-size: 15px;
   }
 }

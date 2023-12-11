@@ -9,28 +9,40 @@ function ProjectAll() {
       image:
         "https://img.freepik.com/free-vector/social-media-icons_53876-89122.jpg",
       lang: "MongoDb, Express,React Js,Node Js",
-      websrc: "https://lazy-pike-sun-hat.cyclic.app/",
+      websrc:{
+         github:"https://github.com/pratik-umap/socialmedia",
+         link:"https://lazy-pike-sun-hat.cyclic.app/"
+      }
     },
     {
       name: "Amazon Clone",
       image:
         "https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-amazon-512.png",
       lang: "React JS , Firebase",
-      websrc: "https://clone-22ee4.web.app",
+      websrc:{
+        github:"https://clone-22ee4.web.app",
+        link:"https://clone-22ee4.web.app"
+     }
     },
     {
       name: "Weather Web",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ58HIQc11qbTAqBshsEJQd7SZAj5jhjD_LLA&usqp=CAU",
       lang: "React JS,weather API",
-      websrc: "https://pratik-umap.github.io/WeatherApp/",
+      websrc:{
+        github:"https://github.com/pratik-umap/WeatherApp",
+        link:"https://pratik-umap.github.io/WeatherApp/"
+     } 
     },
     {
       name: "Image Web",
       image:
         "https://becomeawritertoday.com/wp-content/uploads/2020/08/Best-Stock-Photo-Sites-For-High-Quality-Images.png",
       lang: "React Js,Unsplash API",
-      websrc: "https://pratik-umap.github.io/photos/",
+      websrc: {
+        github:"https://github.com/pratik-umap/photos",
+        link:"https://pratik-umap.github.io/photos/"
+     }
     },
   ];
   return (

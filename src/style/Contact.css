@@ -1,7 +1,7 @@
 .contact {
   width: 100%;
   height: 100vh;
-  background-color: white;
+  background-color: #0f0e0e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,11 +10,6 @@
   margin-top: 80px;
   height: 80vh;
   width: 80%;
-  background-image: linear-gradient(
-    113.2677deg,
-    #e0f787 5.53385%,
-    #4ee3fa 96.67969%
-  );
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
@@ -25,7 +20,7 @@
 .contact_title {
   width: 60%;
   margin: 0 20px;
-  /* background-color: yellow; */
+  color: white;
 }
 
 .contact_title > h3 {
@@ -48,8 +43,8 @@
 }
 
 .contact_left {
-  /* width: 50%; */
-  background-color: #fff;
+  background-color: #110f0f91;
+  color: white;
   padding: 30px 45px 50px;
   margin-left: 30px;
   border-radius: 6px;
@@ -70,7 +65,7 @@
 
 .title > p > span {
   font-weight: 600;
-  color: #1a1a1a;
+  color: #595353;
 }
 
 .fields {
@@ -91,7 +86,7 @@
   border: none;
   border-bottom: 1px solid #cbd3d9;
   font-size: 16px;
-  /* color: #7e7e7e; */
+  background: #0f0e0e;
 }
 
 .second_row {
@@ -105,7 +100,7 @@
   border: none;
   border-bottom: 1px solid #cbd3d9;
   font-size: 16px;
-  /* color: #7e7e7e; */
+  background: #0f0e0e;
 }
 
 .third_row {
@@ -119,7 +114,7 @@
   border: none;
   border-bottom: 1px solid #cbd3d9;
   font-size: 16px;
-  /* color: #7e7e7e; */
+  background: #0f0e0e;
 }
 
 .contact_btn {
@@ -131,16 +126,15 @@
 .contact_btn > button {
   border-radius: 6px;
   padding: 9px 25px;
-  background: #fff;
-  color: #1a1a1a;
+  background: #0f0e0e;
+  color: #7e7e7e;
   font-size: 18px;
   border: 2px solid #7e7e7e;
 }
 
 .contact_btn > button:hover {
-  background-color: #1a1a1a;
+  background-color: #1c1a1a;
   color: white;
-  border: 2px solid #1a1a1a;
   cursor: pointer;
 }
 
